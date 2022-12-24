@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:normal,bold");
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;800&display=swap');
+
+:root {
+    --eerie-black: #1F2124ff;
+    --shadow-blue: #7C8CA8ff;
+    --independence: #475976ff;
+    --my-sky-blue: rgb(113, 148, 209)
+}
+
+* {
+    font-family: 'Chivo Mono', monospace;
+}
+
+body {
+    background-color: #1F2124ff;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    color: white;
+    min-width: 80%;
+    align-items: center;
+}
+
+.contact ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.contact-item {
+    padding: 0 15px;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: var(--my-sky-blue);
+}

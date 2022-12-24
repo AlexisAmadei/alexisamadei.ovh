@@ -1,5 +1,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:normal,bold");
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;800&display=swap');
 
 :root {
     --eerie-black: #1F2124ff;
@@ -9,7 +10,11 @@
 }
 
 * {
-    font-family: 'Montserrat';
+    font-family: 'Chivo Mono', monospace;
+}
+
+body {
+    background-color: #1F2124ff;
 }
 
 .row {
@@ -17,74 +22,22 @@
     padding: 0;
 }
 
-.main-header {
-    background-color: #1F2124ff;
-    min-width: 100%;
-    min-height: 100px;
-    --bs-gutter-x: 0;
-    display: inline-flex;
-    z-index: 2;
-}
-
-.nav-left {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.nav-left ul {
-    padding-left: 0;
-}
-
-.nav-center {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.contact-button {
-    background-color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 30px;
-    transition: all 0.3s ease 0s;
-}
-
-.contact-button:hover {
-    background-color: var(--my-sky-blue);
-    color: #fff;
-    transform: translateY(-3px);
-}
-
-.nav-item {
-    color: white;
-    font-size: 20px;
-    display: inline;
-    margin: 20px;
-    padding: 5px;
-}
-
-.nav-item a {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-item a:hover {
-    color: var(--my-sky-blue);
-    transform: translateY(-3px);
-}
-
 .main-page {
     background-color: #1F2124ff;
     color: white;
     font-size: 16px;
-    height: 980px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.blink {
+    animation-name: blinkingText;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinkingText {
+    from{color: white;} to {color: transparent;}
 }
 
 .main-page h1 {
@@ -92,26 +45,20 @@
     font-weight: normal;
 }
 
-.main-page span {
-    font-weight: bolder;
+.main-right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .main-left {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding-top: 100px;
-    padding-left: 100px;
-    text-align: left;
+    justify-content: center;
 }
 
-.main-right {
-    display: flex;
-    align-items: flex-start;
-    padding-top: 30px;
-    padding-left: 30px;
-}
-
-.main-right img {
-    max-width: 70%;
+.main-page img {
+    width: 80%;
+    margin: 10px;
 }

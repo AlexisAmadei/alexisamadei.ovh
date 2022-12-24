@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:normal,bold");
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;800&display=swap');
+
+:root {
+    --eerie-black: #1F2124ff;
+    --shadow-blue: #7C8CA8ff;
+    --independence: #475976ff;
+    --my-sky-blue: rgb(113, 148, 209)
+}
+
+.main-header {
+    background-color: #1F2124ff;
+    min-width: 100%;
+    display: flex;
+}
+
+.logo-header {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    color: white;
+    font-size: 20px;
+    margin: auto 50px;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    transform: translateY(-3px);
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-item a:hover {
+    color: var(--my-sky-blue);
+}
+
+.contact-button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-button:hover {
+    background-color: var(--my-sky-blue);
+    color: #fff;
+    transform: translateY(-3px);
+}
