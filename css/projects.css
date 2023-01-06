@@ -1,0 +1,10 @@
+.main-body {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-evenly;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-evenly;
+}
