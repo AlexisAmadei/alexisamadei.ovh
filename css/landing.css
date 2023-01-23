@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:normal,bold");
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;800&display=swap');
 
+@keyframes blinkingText {
+    from{color: white;} to {color: transparent;}
+}
+
 :root {
     --eerie-black: #1F2124ff;
     --shadow-blue: #7C8CA8ff;
@@ -11,6 +15,7 @@
 
 * {
     font-family: 'Chivo Mono', monospace;
+    box-sizing: border-box;
 }
 
 body {
@@ -36,10 +41,6 @@ body {
     animation-iteration-count: infinite;
 }
 
-@keyframes blinkingText {
-    from{color: white;} to {color: transparent;}
-}
-
 .main-page h1 {
     font-size: 88px;
     font-weight: normal;
@@ -61,4 +62,45 @@ body {
 .main-page img {
     width: 80%;
     margin: 10px;
+}
+
+.rwd-space {
+    display: none;
+}
+
+.sm-title {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .main-page {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .header-nav {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .main-left {
+        margin: 0;
+        padding: 0;
+    }
+    .main-right {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .main-right h1 {
+        font-size: 40px;
+    }
+    .main-right br {
+        display: none;
+    }
+    .lg-title {
+        display: none;
+    }
+    .sm-title {
+        display: block;
+    }
 }
